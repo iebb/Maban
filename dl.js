@@ -40,7 +40,7 @@ function doFetchProblem(problemId) {
 			var devFile = "", isCpp = 1, i = 0;
 			folder = sanitize(body.data.id + " " + body.data.title);
 			config = JSON.parse(body.data.config);
-			writeFile("./saved/" + folder + "/problem.txt", body.content);
+			writeFile("./saved/" + folder + "/problem.txt", body.data.content);
 			for (i in config.code_files.answer) {
 				filename = config.code_files.answer[i];
 				writeFile("./saved/" + folder + "/" + filename, "");
