@@ -16,10 +16,10 @@
 
 There are some precompiled binaries (using ``enclose``) for you:
 
-[``windows-32bit``](https://github.com/iebb/matrix-asgn-batchdl-nodejs/releases/download/v0.16.6.3alpha/downloader-win32.exe)
+[``windows-32bit``](https://github.com/iebb/matrix-asgn-batchdl-nodejs/releases/download/v0.16.6.3beta/downloader-win32.exe)
 ``12.4 MiB``
 
-[``windows-64bit``](https://github.com/iebb/matrix-asgn-batchdl-nodejs/releases/download/v0.16.6.3alpha/downloader-win64.exe)
+[``windows-64bit``](https://github.com/iebb/matrix-asgn-batchdl-nodejs/releases/download/v0.16.6.3beta/downloader-win64.exe)
 ``15.5 MiB``
 
 You only need to execute it.
