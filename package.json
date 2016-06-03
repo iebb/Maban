@@ -1,0 +1,19 @@
+{
+	"name": "matrixdl",
+	"version": "8.4.0",
+	"description": "A Downloader for Matrix Projects",
+	"maintainers": [
+		"ieb <1@wa.vg>"
+	],
+	"license": "GPL-3.0",
+	"repository": "ieb/matrixdl",
+	"dependencies": {
+		"sanitize-filename": "*",
+		"request": "*",
+		"mkdirp": "*",
+		"prompt": "*"
+	},
+	"scripts": {
+		"start": "node dl.js"
+	}
+}
