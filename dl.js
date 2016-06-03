@@ -37,24 +37,24 @@ function doFetchProblem(problemId) {
 			console.log(msg);
 			return PromptLogin();
 		} else {
-			var devFile = "", isCpp = 1, i = 0;
+			var devFile = "", isCpp = 1, cnt = 0;
 			folder = sanitize(body.data.id + " " + body.data.title);
 			config = JSON.parse(body.data.config);
 			writeFile("./saved/" + folder + "/problem.txt", body.data.content);
 			for (i in config.code_files.answer) {
 				filename = config.code_files.answer[i];
 				writeFile("./saved/" + folder + "/" + filename, "");
-				devFile += util.format("[Unit%d]\nFileName=%s\n", ++i, filename);
+				devFile += util.format("[Unit%d]\nFileName=%s\n", ++cnt, filename);
 			}
 			for (i in body.data.supportFiles) {
 				for (filename in body.data.supportFiles[i]) {
 					writeFile("./saved/" + folder + "/" + filename, body.data.supportFiles[i][filename]);
-					devFile += util.format("[Unit%d]\nFileName=%s\n", ++i, filename);
+					devFile += util.format("[Unit%d]\nFileName=%s\n", ++cnt, filename);
 				}
 			}
 			devFile = util.format("[Project]\nFileName=Project%s.dev\nName=%s\n\
 				UnitCount=%s\nIsCpp=%d\nType=1\nVer=2\n",
-				problemId, problemId, i, isCpp) + devFile;
+				problemId, problemId, cnt, isCpp) + devFile;
 			writeFile("./saved/" + folder + "/Project" + problemId + ".dev", devFile);
 		}
 	});
