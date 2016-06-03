@@ -1,7 +1,7 @@
 # Matrix-Asgn-BAtchdl-Nodejs
 
 * For Matrix, the NEW *buggy* Eden.
-* FUCK SELF-SIGNED CERTIFATES
+* FUCK SELF-SIGNED CERTIFICATES
 * Matrix Assignment Batch Downloader in Node.js
 * Downloading All Assignments on [https://eden.sysu.edu.cn](https://eden.sysu.edu.cn/)
 * Generate Dev-C++ Compatible Project Automatically
